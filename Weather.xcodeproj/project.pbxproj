@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				2266B7CA2B5845D0005199F4 /* WeatherApp.swift */,
-				2266B7CC2B5845D0005199F4 /* ContentView.swift */,
+				2266B7D82B584753005199F4 /* Views */,
+				2266B7D92B58475C005199F4 /* Models */,
+				2266B7DA2B584760005199F4 /* Utils */,
 				2266B7CE2B5845D1005199F4 /* Assets.xcassets */,
 				2266B7D02B5845D1005199F4 /* Preview Content */,
 			);
@@ -65,6 +67,60 @@
 				2266B7D12B5845D1005199F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2266B7D82B584753005199F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2266B7DB2B584766005199F4 /* Main */,
+				2266B7DC2B58476A005199F4 /* Navigation */,
+				2266B7DE2B584796005199F4 /* Detail */,
+				2266B7DD2B584773005199F4 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2266B7D92B58475C005199F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2266B7DA2B584760005199F4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2266B7DB2B584766005199F4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2266B7CC2B5845D0005199F4 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2266B7DC2B58476A005199F4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2266B7DD2B584773005199F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2266B7DE2B584796005199F4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
