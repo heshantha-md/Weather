@@ -15,9 +15,9 @@ struct HomeView: View {
     @State var bottomSheetTranslation: CGFloat = BottomSheet.PresentationDetent.medium.size
     
     var bottomSheetTranslationProrated: CGFloat {
-        withAnimation {
-             let translationProrated = (bottomSheetTranslation - BottomSheet.PresentationDetent.medium.size) / BottomSheet.PresentationDetent.medium.size
-             return translationProrated > 0.79 ? 1 : translationProrated < 0 ? 0 : translationProrated
+        withAnimation(.easeInOut(duration: 0.5)) {
+            let translationProrated = (bottomSheetTranslation - BottomSheet.PresentationDetent.medium.size) / BottomSheet.PresentationDetent.medium.size
+            return translationProrated > 0.79 ? 1 : translationProrated < 0 ? 0 : translationProrated
         }
     }
     
@@ -43,6 +43,8 @@ struct HomeView: View {
                     
                     // MARK: - House Image
                     Image("House")
+                        .resizable()
+                        .scaledToFit()
                         .frame(maxHeight: .infinity, alignment: .top)
                         .padding(.top, 257)
                         .offset(y: -bottomSheetTranslationProrated * imageOffSet)
@@ -94,14 +96,14 @@ struct HomeView: View {
                                                     .frame(height: 20)
                                                     .frame(maxHeight: .infinity, alignment: .top)},
                                onDrag: { translation in
-                                   bottomSheetTranslation = translation
-                                   withAnimation(.easeInOut) {
-                                       hasDragged = bottomSheetSelectedDetent == .large
-                                   }
+                                    withAnimation(.easeInOut(duration: 0.5)) {
+                                        bottomSheetTranslation = translation
+                                        hasDragged = bottomSheetTranslationProrated == 1
+                                    }
                                },
                                header: { EmptyView() },
                                main: {
-                                    ForecastView()
+                                    ForecastView(bottomSheetTranslationProrated: bottomSheetTranslationProrated)
                                         .presentationDetentsPlus(
                                             [.medium, .large],
                                             selection: $bottomSheetSelectedDetent
