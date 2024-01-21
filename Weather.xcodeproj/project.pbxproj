@@ -22,6 +22,7 @@
 		2266B7E42B584E65005199F4 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266B7E22B584E65005199F4 /* ForecastModel.swift */; };
 		2268774C2B5BA38C00FC0614 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268774B2B5BA38C00FC0614 /* SegmentedControl.swift */; };
 		2268774E2B5BB0F600FC0614 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268774D2B5BB0F600FC0614 /* ForecastCard.swift */; };
+		227A814C2B5D2DD300D749F8 /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A814B2B5D2DD300D749F8 /* WeatherWidget.swift */; };
 		22CD471D2B598250007B91BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CD471C2B598250007B91BE /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		2266B7E22B584E65005199F4 /* ForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		2268774B2B5BA38C00FC0614 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		2268774D2B5BB0F600FC0614 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
+		227A814B2B5D2DD300D749F8 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 		22CD471C2B598250007B91BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				224C47202B5AA8E30063DA50 /* Blur.swift */,
 				2268774B2B5BA38C00FC0614 /* SegmentedControl.swift */,
 				2268774D2B5BB0F600FC0614 /* ForecastCard.swift */,
+				227A814B2B5D2DD300D749F8 /* WeatherWidget.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227A814C2B5D2DD300D749F8 /* WeatherWidget.swift in Sources */,
 				2268774E2B5BB0F600FC0614 /* ForecastCard.swift in Sources */,
 				2266B7CD2B5845D0005199F4 /* ContentView.swift in Sources */,
 				2266B7E02B584E5E005199F4 /* Extensions.swift in Sources */,

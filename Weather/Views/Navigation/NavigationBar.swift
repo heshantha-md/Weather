@@ -44,10 +44,11 @@ struct NavigationBar: View {
         }
         .frame(height: 106, alignment: .top)
         .padding(.horizontal, 16)
-        .padding(.vertical, 2)
+        .padding(.top, 49)
         .backgroundBlur(radius: 20, opaque: true )
         .background(Color.navBarBackground)
         .frame(maxHeight: .infinity, alignment: .top)
+        .ignoresSafeArea()
     }
 }
 
